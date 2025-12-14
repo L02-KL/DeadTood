@@ -1,211 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DeadTood - Smart Academic Task Manager for Students</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body class="bg-white text-gray-800">
-  <header class="bg-blue-600 text-white text-center py-12">
-    <h1 class="text-5xl font-bold">📚 DeadTood</h1>
-    <p class="mt-3 text-xl">Smart Academic Task Manager for HCMUT Students</p>
-    <!-- <button class="mt-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-full transition duration-300">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeadTood - Smart Academic Task Manager for Students</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-white text-gray-800">
+    <header class="bg-blue-600 text-white text-center py-12">
+      <h1 class="text-5xl font-bold">📚 DeadTood</h1>
+      <p class="mt-3 text-xl">Smart Academic Task Manager for HCMUT Students</p>
+      <!-- <button class="mt-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-full transition duration-300">
       Get Started Free
     </button> -->
-  </header>
+    </header>
 
-  <section class="max-w-5xl mx-auto p-8 bg-white mt-12 rounded-xl shadow-lg" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-blue-700 mb-4">🎯 The Problem</h2>
-    <p class="text-lg leading-relaxed">Students at HCMUT struggle with managing multiple assignments, quizzes, and project deadlines across different courses. Missing deadlines leads to stress, lower grades, and lost opportunities. Traditional calendars and spreadsheets don't provide the smart organization and timely reminders students need to stay on top of their academic workload.</p>
-  </section>
+    <section
+      class="max-w-5xl mx-auto p-8 bg-white mt-12 rounded-xl shadow-lg"
+      data-aos="fade-up"
+    >
+      <h2 class="text-3xl font-bold text-blue-700 mb-4">🎯 The Problem</h2>
+      <p class="text-lg leading-relaxed">
+        Students at HCMUT struggle with managing multiple assignments, quizzes,
+        and project deadlines across different courses. Missing deadlines leads
+        to stress, lower grades, and lost opportunities. Traditional calendars
+        and spreadsheets don't provide the smart organization and timely
+        reminders students need to stay on top of their academic workload.
+      </p>
+    </section>
 
-  <section class="max-w-5xl mx-auto p-8 bg-white mt-8 rounded-xl shadow-lg" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">✨ Core Features (MVP)</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="p-6 bg-gray-50 rounded-lg border-l-4 border-orange-500">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">📝 Task & Deadline Tracking</h3>
-        <p class="text-gray-600">Create and manage assignments, quizzes, and projects linked to specific courses. Never lose track of what's due.</p>
-      </div>
+    <section
+      class="max-w-5xl mx-auto p-8 bg-white mt-8 rounded-xl shadow-lg"
+      data-aos="fade-up"
+    >
+      <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">
+        ✨ Core Features (MVP)
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 bg-gray-50 rounded-lg border-l-4 border-orange-500">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            📝 Task & Deadline Tracking
+          </h3>
+          <p class="text-gray-600">
+            Create and manage assignments, quizzes, and projects linked to
+            specific courses. Never lose track of what's due.
+          </p>
+        </div>
 
-      <div class="p-6 bg-gray-50 rounded-lg border-l-4 border-blue-500">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">📊 Dashboard Overview</h3>
-        <p class="text-gray-600">Color-coded visual summary of upcoming tasks sorted by urgency. See what needs attention at a glance.</p>
-      </div>
+        <div class="p-6 bg-gray-50 rounded-lg border-l-4 border-blue-500">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            📊 Dashboard Overview
+          </h3>
+          <p class="text-gray-600">
+            Color-coded visual summary of upcoming tasks sorted by urgency. See
+            what needs attention at a glance.
+          </p>
+        </div>
 
-      <div class="p-6 bg-gray-50 rounded-lg border-l-4 border-orange-500">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">🔐 Basic Authentication</h3>
-        <p class="text-gray-600">Secure login with Google or Email to protect your data and sync across devices.</p>
-      </div>
+        <div class="p-6 bg-gray-50 rounded-lg border-l-4 border-orange-500">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            🔐 Basic Authentication
+          </h3>
+          <p class="text-gray-600">
+            Secure login with Google or Email to protect your data and sync
+            across devices.
+          </p>
+        </div>
 
-      <div class="p-6 bg-gray-50 rounded-lg border-l-4 border-blue-500">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">🔔 Smart Reminders</h3>
-        <p class="text-gray-600">Timely notifications and emails before deadlines to ensure you never miss important work.</p>
-      </div>
+        <div class="p-6 bg-gray-50 rounded-lg border-l-4 border-blue-500">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            🔔 Smart Reminders
+          </h3>
+          <p class="text-gray-600">
+            Timely notifications and emails before deadlines to ensure you never
+            miss important work.
+          </p>
+        </div>
 
-      <div class="p-6 bg-gray-50 rounded-lg border-l-4 border-orange-500 md:col-span-2">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">📚 Course Management</h3>
-        <p class="text-gray-600">Add, edit, and delete courses by subject code. Organize your entire academic term logically.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="max-w-5xl mx-auto p-8 bg-white mt-8 rounded-xl shadow-lg" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">🚀 How It Works</h2>
-    <div class="space-y-6">
-      <div class="flex items-start">
-        <div class="flex-shrink-0 w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
-        <div class="ml-4">
-          <h3 class="text-xl font-semibold">Sign Up & Add Courses</h3>
-          <p class="text-gray-600 mt-1">Create your account and add all your courses for the semester using subject codes.</p>
+        <div
+          class="p-6 bg-gray-50 rounded-lg border-l-4 border-orange-500 md:col-span-2"
+        >
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            📚 Course Management
+          </h3>
+          <p class="text-gray-600">
+            Add, edit, and delete courses by subject code. Organize your entire
+            academic term logically.
+          </p>
         </div>
       </div>
+    </section>
 
-      <div class="flex items-start">
-        <div class="flex-shrink-0 w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
-        <div class="ml-4">
-          <h3 class="text-xl font-semibold">Add Tasks & Deadlines</h3>
-          <p class="text-gray-600 mt-1">Input assignments, quizzes, and projects with their due dates linked to specific courses.</p>
+    <section
+      class="max-w-5xl mx-auto p-8 bg-white mt-8 rounded-xl shadow-lg"
+      data-aos="fade-up"
+    >
+      <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">
+        🚀 How It Works
+      </h2>
+      <div class="space-y-6">
+        <div class="flex items-start">
+          <div
+            class="flex-shrink-0 w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-xl"
+          >
+            1
+          </div>
+          <div class="ml-4">
+            <h3 class="text-xl font-semibold">Sign Up & Add Courses</h3>
+            <p class="text-gray-600 mt-1">
+              Create your account and add all your courses for the semester
+              using subject codes.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start">
+          <div
+            class="flex-shrink-0 w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xl"
+          >
+            2
+          </div>
+          <div class="ml-4">
+            <h3 class="text-xl font-semibold">Add Tasks & Deadlines</h3>
+            <p class="text-gray-600 mt-1">
+              Input assignments, quizzes, and projects with their due dates
+              linked to specific courses.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start">
+          <div
+            class="flex-shrink-0 w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-xl"
+          >
+            3
+          </div>
+          <div class="ml-4">
+            <h3 class="text-xl font-semibold">Monitor Your Dashboard</h3>
+            <p class="text-gray-600 mt-1">
+              View all upcoming tasks color-coded by urgency on your
+              personalized dashboard.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start">
+          <div
+            class="flex-shrink-0 w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xl"
+          >
+            4
+          </div>
+          <div class="ml-4">
+            <h3 class="text-xl font-semibold">Receive Smart Reminders</h3>
+            <p class="text-gray-600 mt-1">
+              Get timely notifications before deadlines so you never miss an
+              assignment.
+            </p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="flex items-start">
-        <div class="flex-shrink-0 w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
-        <div class="ml-4">
-          <h3 class="text-xl font-semibold">Monitor Your Dashboard</h3>
-          <p class="text-gray-600 mt-1">View all upcoming tasks color-coded by urgency on your personalized dashboard.</p>
+    <section
+      class="max-w-5xl mx-auto p-8 bg-white mt-8 rounded-xl shadow-lg"
+      data-aos="fade-up"
+    >
+      <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">
+        💡 Why Choose DeadTood?
+      </h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="text-center p-6">
+          <div class="text-5xl mb-3">⏰</div>
+          <h3 class="text-xl font-semibold mb-2">Never Miss Deadlines</h3>
+          <p class="text-gray-600">
+            Smart reminders keep you informed and on track with all your
+            academic commitments.
+          </p>
+        </div>
+
+        <div class="text-center p-6">
+          <div class="text-5xl mb-3">📈</div>
+          <h3 class="text-xl font-semibold mb-2">Boost Productivity</h3>
+          <p class="text-gray-600">
+            Organized task management helps you focus on what matters most and
+            improve your grades.
+          </p>
+        </div>
+
+        <div class="text-center p-6">
+          <div class="text-5xl mb-3">😌</div>
+          <h3 class="text-xl font-semibold mb-2">Reduce Stress</h3>
+          <p class="text-gray-600">
+            Visual organization and timely alerts eliminate the anxiety of
+            forgotten assignments.
+          </p>
         </div>
       </div>
+    </section>
 
-      <div class="flex items-start">
-        <div class="flex-shrink-0 w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xl">4</div>
-        <div class="ml-4">
-          <h3 class="text-xl font-semibold">Receive Smart Reminders</h3>
-          <p class="text-gray-600 mt-1">Get timely notifications before deadlines so you never miss an assignment.</p>
+    <section
+      class="max-w-5xl mx-auto p-8 bg-white mt-8 rounded-xl shadow-lg"
+      data-aos="fade-up"
+    >
+      <h2 class="text-3xl font-bold text-blue-700 mb-4 text-center">
+        👥 Built for HCMUT Students
+      </h2>
+      <p class="text-lg text-center text-gray-600 max-w-3xl mx-auto">
+        DeadTood is specifically designed for students at Ho Chi Minh City
+        University of Technology who juggle multiple courses, assignments, and
+        deadlines throughout the semester. Our MVP focuses on solving the core
+        challenges of academic task management before expanding to advanced
+        features.
+      </p>
+    </section>
+
+    <section
+      class="max-w-5xl mx-auto p-8 bg-white mt-8 rounded-xl shadow-lg"
+      data-aos="fade-up"
+    >
+      <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">
+        👥 Team Members
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full border border-gray-300 text-left">
+          <thead class="bg-blue-100">
+            <tr>
+              <th class="py-3 px-4 font-semibold">Name</th>
+              <th class="py-3 px-4 font-semibold">Student ID</th>
+              <th class="py-3 px-4 font-semibold">Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b">
+              <td class="py-3 px-4">Lê Tuấn Kiệt</td>
+              <td class="py-3 px-4">2211756</td>
+              <td class="py-3 px-4">Backend Developer</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-3 px-4">Trần Lâm</td>
+              <td class="py-3 px-4">2211821</td>
+              <td class="py-3 px-4">Frontend Developer</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-3 px-4">Trần Vĩ Quang</td>
+              <td class="py-3 px-4">2212760</td>
+              <td class="py-3 px-4">Frontend Developer</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-3 px-4">Dương Hải Lâm</td>
+              <td class="py-3 px-4">2211807</td>
+              <td class="py-3 px-4">Fullstack Developer</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section
+      class="max-w-5xl mx-auto p-8 bg-white mt-8 rounded-xl shadow-lg"
+      data-aos="fade-up"
+    >
+      <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">
+        🔗 Project Links
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Frontend Repository -->
+        <div
+          class="p-6 bg-gray-50 rounded-lg text-center border border-indigo-200 hover:shadow-md transition-shadow duration-300"
+        >
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">
+            🎨 Frontend Repository
+          </h3>
+          <p class="text-gray-600 mb-4">React Native • Mobile App</p>
+          <a
+            href="https://github.com/L02-KL/FE"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-6 rounded-full transition duration-300"
+          >
+            View Frontend
+          </a>
+        </div>
+
+        <!-- Backend Repository -->
+        <div
+          class="p-6 bg-gray-50 rounded-lg text-center border border-green-200 hover:shadow-md transition-shadow duration-300"
+        >
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">
+            ⚙️ Backend Repository
+          </h3>
+          <p class="text-gray-600 mb-4">Express.js • Prisma</p>
+          <a
+            href="https://github.com/L02-KL/DeadTood-BE"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-full transition duration-300"
+          >
+            View Backend
+          </a>
+        </div>
+
+        <!-- Figma Design -->
+        <div
+          class="p-6 bg-gray-50 rounded-lg text-center border border-purple-200 hover:shadow-md transition-shadow duration-300"
+        >
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">
+            🎨 Figma Design
+          </h3>
+          <p class="text-gray-600 mb-4">UI/UX Design Prototype</p>
+          <a
+            href="https://www.figma.com/design/vzuUlTQaONbS42xtk0lS6u/DeadTood-Figma-Design?node-id=0-1&p=f&t=iOKFfe9CpX11QB1a-0"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-6 rounded-full transition duration-300"
+          >
+            View on Figma
+          </a>
+        </div>
+
+        <!-- Behance Showcase -->
+        <div
+          class="p-6 bg-gray-50 rounded-lg text-center border border-blue-200 hover:shadow-md transition-shadow duration-300"
+        >
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">
+            🖼️ Behance Showcase
+          </h3>
+          <p class="text-gray-600 mb-4">Design Case Study</p>
+          <a
+            href="https://www.behance.net/gallery/240402583/DeadTood"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition duration-300"
+          >
+            View on Behance
+          </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="max-w-5xl mx-auto p-8 bg-white mt-8 rounded-xl shadow-lg" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">💡 Why Choose DeadTood?</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="text-center p-6">
-        <div class="text-5xl mb-3">⏰</div>
-        <h3 class="text-xl font-semibold mb-2">Never Miss Deadlines</h3>
-        <p class="text-gray-600">Smart reminders keep you informed and on track with all your academic commitments.</p>
-      </div>
-
-      <div class="text-center p-6">
-        <div class="text-5xl mb-3">📈</div>
-        <h3 class="text-xl font-semibold mb-2">Boost Productivity</h3>
-        <p class="text-gray-600">Organized task management helps you focus on what matters most and improve your grades.</p>
-      </div>
-
-      <div class="text-center p-6">
-        <div class="text-5xl mb-3">😌</div>
-        <h3 class="text-xl font-semibold mb-2">Reduce Stress</h3>
-        <p class="text-gray-600">Visual organization and timely alerts eliminate the anxiety of forgotten assignments.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="max-w-5xl mx-auto p-8 bg-white mt-8 rounded-xl shadow-lg" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-blue-700 mb-4 text-center">👥 Built for HCMUT Students</h2>
-    <p class="text-lg text-center text-gray-600 max-w-3xl mx-auto">
-      DeadTood is specifically designed for students at Ho Chi Minh City University of Technology who juggle multiple courses, assignments, and deadlines throughout the semester. Our MVP focuses on solving the core challenges of academic task management before expanding to advanced features.
-    </p>
-  </section>
-
-  <section class="max-w-5xl mx-auto p-8 bg-white mt-8 rounded-xl shadow-lg" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">👥 Team Members</h2>
-    <div class="overflow-x-auto">
-      <table class="min-w-full border border-gray-300 text-left">
-        <thead class="bg-blue-100">
-          <tr>
-            <th class="py-3 px-4 font-semibold">Name</th>
-            <th class="py-3 px-4 font-semibold">Student ID</th>
-            <th class="py-3 px-4 font-semibold">Role</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="border-b">
-            <td class="py-3 px-4">Lê Tuấn Kiệt</td>
-            <td class="py-3 px-4">2211756</td>
-            <td class="py-3 px-4">Backend Developer</td>
-          </tr>
-          <tr class="border-b">
-            <td class="py-3 px-4">Trần Lâm</td>
-            <td class="py-3 px-4">2211821</td>
-            <td class="py-3 px-4">Frontend Developer</td>
-          </tr>
-          <tr class="border-b">
-            <td class="py-3 px-4">Trần Vĩ Quang</td>
-            <td class="py-3 px-4">2212760</td>
-            <td class="py-3 px-4">Frontend Developer</td>
-          </tr>
-          <tr class="border-b">
-            <td class="py-3 px-4">Dương Hải Lâm</td>
-            <td class="py-3 px-4">2211807</td>
-            <td class="py-3 px-4">Fullstack Developer</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section class="max-w-5xl mx-auto p-8 bg-white mt-8 rounded-xl shadow-lg" data-aos="fade-up">
-  <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">🔗 Project Links</h2>
-
-  <div class="grid md:grid-cols-2 gap-6">
-    <!-- Frontend Repository -->
-    <div class="p-6 bg-gray-50 rounded-lg text-center border border-blue-200 hover:shadow-md transition-shadow duration-300">
-      <h3 class="text-xl font-semibold text-gray-800 mb-3">🎨 Frontend Repository</h3>
-      <p class="text-gray-600 mb-4">Next.js + Tailwind</p>
-      <a href="https://github.com/deadtood/deadtood-frontend" target="_blank" rel="noopener noreferrer"
-        class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition duration-300">
-        View Frontend
-      </a>
-    </div>
-
-    <!-- Backend Repository -->
-    <div class="p-6 bg-gray-50 rounded-lg text-center border border-green-200 hover:shadow-md transition-shadow duration-300">
-      <h3 class="text-xl font-semibold text-gray-800 mb-3">⚙️ Backend Repository</h3>
-      <p class="text-gray-600 mb-4">Next.js + Prisma + PostgreSQL</p>
-      <a href="https://github.com/L02-KL/DeadTood-BE" target="_blank" rel="noopener noreferrer"
-        class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-full transition duration-300">
-        View Backend
-      </a>
-    </div>
-  </div>
-</section>
-
-  <section class="max-w-5xl mx-auto p-8 bg-gradient-to-r from-blue-600 to-blue-700 mt-8 rounded-xl shadow-lg text-center text-white" data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-4">Ready to Take Control of Your Academic Life?</h2>
-    <p class="text-xl mb-6">Join HCMUT students who are already managing their deadlines smarter.</p>
-    <!-- <button class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-10 rounded-full text-lg transition duration-300">
+    <section
+      class="max-w-5xl mx-auto p-8 bg-gradient-to-r from-blue-600 to-blue-700 mt-8 rounded-xl shadow-lg text-center text-white"
+      data-aos="fade-up"
+    >
+      <h2 class="text-3xl font-bold mb-4">
+        Ready to Take Control of Your Academic Life?
+      </h2>
+      <p class="text-xl mb-6">
+        Join HCMUT students who are already managing their deadlines smarter.
+      </p>
+      <!-- <button class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-10 rounded-full text-lg transition duration-300">
       Start Free Today
     </button> -->
-  </section>
+    </section>
 
-  <footer class="text-center py-8 text-gray-600 mt-12 border-t">
-    <p class="text-lg font-semibold mb-2">DeadTood - Smart Academic Task Manager</p>
-    <p>© 2025 L02-KL. Built with ❤️ for HCMUT Students</p>
-    <!-- <div class="mt-4">
+    <footer class="text-center py-8 text-gray-600 mt-12 border-t">
+      <p class="text-lg font-semibold mb-2">
+        DeadTood - Smart Academic Task Manager
+      </p>
+      <p>© 2025 L02-KL. Built with ❤️ for HCMUT Students</p>
+      <!-- <div class="mt-4">
       <a href="#" class="text-blue-600 hover:text-blue-700 mx-2">Privacy Policy</a>
       <a href="#" class="text-blue-600 hover:text-blue-700 mx-2">Terms of Service</a>
       <a href="#" class="text-blue-600 hover:text-blue-700 mx-2">Contact Us</a>
     </div> -->
-  </footer>
+    </footer>
 
-  <script>
-    AOS.init({
-      duration: 800,
-      once: true
-    });
-  </script>
-</body>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+  </body>
 </html>
